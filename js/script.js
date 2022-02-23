@@ -61,19 +61,41 @@ let playList = [
 
  // Task 2
 
-let modal = document.getElementById('myModal');
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-span.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+// let modal = document.getElementById('myModal');
+// let btn = document.getElementById("myBtn");
+// let span = document.getElementsByClassName("close")[0];
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// ModalWindow
+
+function openWindow() {
+let main = document.getElementById('main');
+main.style.display = 'flex';
+console.log('Hello!');
 }
 
+function closeWindow() {
+    let close = document.getElementById('close');
+    main.style.display = 'none';
+    console.log ('I dont like it');
+}
 
+ function modalOpen() {
+    let wrap = document.getElementById('wrap');
+    wrap.style.display = 'block';
+    
+ }
+ function closeOpen() {
+    let wrap = document.getElementById('wrap');
+    wrap.style.display = 'none';
+ }
