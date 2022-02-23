@@ -7,66 +7,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Homework</title>
   <link rel="stylesheet" href="./css/style.css">
-<style>
-  .btnModal {
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    border: none;
-    background-color: teal;
-    color: white;
-    margin: 20px 30px;
-  }
-  .wrap {
-    width: 100vw;
-    height: 100vh;
-    /* border: 2px solid red; */
-    display: none;
-    background-color: rgba(189, 186, 186, 0.5);
-     position: fixed; 
-  top: 0;
-  right: 0;
-  }
-.main {
-  /* border: 2px solid red; */
-  width: 200px;
+  <style>
+    .btnModal {
+      width: 100px;
+      height: 50px;
+      border-radius: 20px;
+      border: none;
+      background-color: teal;
+      color: white;
+      margin: 20px 30px;
+    }
+
+    .wrap {
+      width: 100vw;
+      height: 100vh;
+      /* border: 2px solid red; */
+      display: none;
+      background-color: rgba(189, 186, 186, 0.5);
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+
+    .main {
+      /* border: 2px solid red; */
+      width: 200px;
+      height: 100px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(208, 255, 0, 0.466);
+      position: fixed;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    .header {
+      /* border: 2px solid green; */
+      text-align: center;
+      /* color: white; */
+      text-transform: uppercase;
+    }
+    .close {
+      background-color: rgba(165, 19, 209, 0.911);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 25px;
+      border-radius: 10px;
+    }
+.red {
+  width: 100px;
   height: 100px;
-  border-radius: 20px;
+  background-color: red;
+  border-radius: 50px;
+}
+.yellow {
+  width:100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50px;
+}
+.green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50px;
+}
+
+.trafic_lights {
+  border: 2px solid gray;
+  width: 120px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  background-color: rgba(208, 255, 0, 0.466);
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%,-50%);
-  display: none;
-}
-.header {
-  /* border: 2px solid green; */
-  text-align: center;
-  /* color: white; */
-  text-transform: uppercase;
 
-  
-}
-.close {
-background-color: rgba(165, 19, 209, 0.911);
-color: white;
-border: none;
-width: 50px;
-height: 25px;
-border-radius: 10px;
+
 }
 
-</style>
+  </style>
 
 </head>
 
 <body>
 
-  <!-- <button id="myBtn">Open the window</button>
+   <!-- <button id="myBtn">Open the window</button>
   <div id="myModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -80,26 +109,21 @@ border-radius: 10px;
         <h3>Bye</h3>
       </div>
     </div>
-  </div> -->
+  </div>  -->
 
-<button id="btnModal"
-class="btnModal"
-onclick="openWindow(),modalOpen()" 
->modal Window</button>
-<div class="wrap"
-id="wrap">
-  <div class="main"
-  id="main">
-    <div class="header"
-    id="header"
-    >I have done it! </div>
-    <button class="close"
-    id="close"
-    onclick="closeWindow(),closeOpen()"
-    >Close</button>
+  <button id="btnModal" class="btnModal" onclick="modalOpen()">modal Window</button>
+  <div class="wrap" id="wrap">
+    <div class="main" id="main">
+      <div class="header" id="header">I have done it! </div>
+      <button class="close" id="close" onclick="closeOpen()">Close</button>
+    </div>
   </div>
-</div>
 
+<div class="trafic_lights">
+  <div class="red"></div>
+  <div class="yellow"></div>
+  <div class="green"></div>
+</div>
 
 
 
