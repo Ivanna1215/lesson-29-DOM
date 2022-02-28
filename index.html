@@ -62,19 +62,19 @@
 .red {
   width: 100px;
   height: 100px;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 50px;
 }
 .yellow {
   width:100px;
   height: 100px;
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: 50px;
 }
 .green {
   width: 100px;
   height: 100px;
-  background-color: green;
+  /* background-color: green; */
   border-radius: 50px;
 }
 
@@ -120,9 +120,15 @@
   </div>
 
 <div class="trafic_lights">
-  <div class="red"></div>
-  <div class="yellow"></div>
-  <div class="green"></div>
+  <button class="red" id="red"
+  onclick="redOpen()"
+  ></button>
+  <button class="yellow" id="yellow"
+  onclick="yellow()"
+  ></button>
+  <button class="green" id="green"
+  onclick="green()"
+  ></button>
 </div>
 
 
