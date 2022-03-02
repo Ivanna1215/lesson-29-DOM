@@ -90,30 +90,56 @@ function closeOpen() {
     wrap.style.display = 'none';
 }
 
-function redOpen() {
-    let red = document.getElementById('red');
-    let yellow = document.getElementById('yellow');
-    let green = document.getElementById('green');
-    red.style.background = 'white';
-    yellow.style.background = 'yellow';
-    green.style.background = 'white';
-}
+// function redOpen() {
+//     let red = document.getElementById('red');
+//     let yellow = document.getElementById('yellow');
+//     let green = document.getElementById('green');
+//     red.style.background = 'white';
+//     yellow.style.background = 'yellow';
+//     green.style.background = 'white';
+// }
 
-function yellow () {
+// function yellow () {
+//     let yellow = document.getElementById('yellow');
+//     let green = document.getElementById('green');
+//     let red = document.getElementById('red');
+//     red.style.background = 'white';
+//     yellow.style.background = 'white';
+//     green.style.background = 'green';
+
+// }
+
+// function green() {
+//     let green = document.getElementById('green');
+//     let yellow = document.getElementById('yellow');
+//     green.style.background = 'white';
+//     yellow.style.background = 'white';
+//     let red = document.getElementById('red');
+//     red.style.background = 'red';
+// }
+function total() {
+    let red = document.getElementById('red');
     let yellow = document.getElementById('yellow');
     let green = document.getElementById('green');
-    let red = document.getElementById('red');
-    red.style.background = 'white';
-    yellow.style.background = 'white';
-    green.style.background = 'green';
+   
+
+    for (let i = 0; i < 3; i++) {
     
-}
+            red.style.background = 'red';
+            yellow.style.background = 'white';
+            green.style.background = 'white';
+        
+        
+            red.style.background = 'white';
+            yellow.style.background = 'yellow';
+            green.style.background = 'white';
+        
+        
+            red.style.background = 'white';
+            yellow.style.background = 'white';
+            green.style.background = 'green';
+        
 
-function green() {
-    let green = document.getElementById('green');
-    let yellow = document.getElementById('yellow');
-    green.style.background = 'white';
-    yellow.style.background = 'white';
-    let red = document.getElementById('red');
-    red.style.background = 'red';
+    }
+
 }

@@ -62,18 +62,21 @@
 .red {
   width: 100px;
   height: 100px;
+  border: 2px solid red;
   /* background-color: red; */
   border-radius: 50px;
 }
 .yellow {
   width:100px;
   height: 100px;
+  border: 2px solid yellow;
   /* background-color: yellow; */
   border-radius: 50px;
 }
 .green {
   width: 100px;
   height: 100px;
+  border: 2px solid green;
   /* background-color: green; */
   border-radius: 50px;
 }
@@ -85,10 +88,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
-
+.total {
+  width: 50px;
+  height: 30px;
+  margin: 20px auto;
+  /* background-color: rgb(0, 225, 255); */
+  /* border: none; */
+}
   </style>
 
 </head>
@@ -120,14 +127,19 @@
   </div>
 
 <div class="trafic_lights">
-  <button class="red" id="red"
-  onclick="redOpen()"
-  ></button>
-  <button class="yellow" id="yellow"
-  onclick="yellow()"
-  ></button>
-  <button class="green" id="green"
-  onclick="green()"
+  <div class="red" id="red"
+
+
+  ></div>
+  <div class="yellow" id="yellow"
+
+  ></div>
+  <div class="green" id="green"
+
+  ></div>
+  <button class="total" 
+  id = "total"
+  onclick="total()"
   ></button>
 </div>
 
