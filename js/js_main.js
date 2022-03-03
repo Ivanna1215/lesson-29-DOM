@@ -16,3 +16,10 @@ function editDiv() {
     elem.classList.add('big');
     
 }
+
+function editColor() {
+    let elem = document.getElementById('color');
+    elem.style.backgroundColor =`rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`;
+    // console.log (`Hello`);
+}
+console.log(`rgb(${Math.round(Math.random()*10)},${Math.round(Math.random()*10)},${Math.round(Math.random()*10)})`);
