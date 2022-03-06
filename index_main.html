@@ -12,11 +12,110 @@ color: red;
         .big {
             font-size: 40px;
         }
+.color {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 30px;
+    background-color: rgb(255, 192, 203);
+}
+.btnColor {
+    margin: 20px 55px;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  /* background-color: red; */
+  border-radius: 50px;
+  margin: 5px;
+}
+.yellow {
+  width:100px;
+  height: 100px;
+  border: 2px solid yellow;
+  /* background-color: yellow; */
+  border-radius: 50px;
+  margin: 5px;
+}
+.green {
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  /* background-color: green; */
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.trafic_lights {
+  border: 2px solid gray;
+  width: 120px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redColor {
+    width: 70px;
+    height: 20px;
+    margin: 20px;
+    background-color: red;
+  
+}
+.yellowColor {
+    width: 70px;
+    height: 20px;
+    margin: 20px;
+    background-color: yellow;
+}
+.greenColor {
+    width: 70px;
+    height: 20px;
+    margin: 20px;
+    background-color: green;
+}
+
+.colorNew {
+  width: 70px;
+  height: 20px;
+}
+.colorNewTask {
+  width: 70px;
+  height: 30px;
+  margin: 30px;
+}
     </style>
 </head>
 <body>
     <button id="btn" class="btn" onclick="addDiv()">addDiv</button>
-    <button id='btnTwo'class='btnTwo' onclick="editDiv()">editDiv</button>
+    <button id='btn'class='btn' onclick="editDiv()">editDiv</button>
+
+    <div class="color" id="color"></div>
+
+    <button class='btnColor' onclick="editColor()">color</button>
+
+    <div class="trafic_lights">
+        <div class="red" id="red"
+        ></div>
+        <div class="yellow" id="yellow"
+        ></div>
+        <div class="green" id="green"
+        ></div>
+       
+
+        <button class="colorNew"
+        onclick="color()"
+        > click me 
+        </button>
+
+      </div>
+
+ <button class="colorNewTask"
+        onclick="easy()"
+        > click  
+        </button>
+
 
    <script src="./js/js_main.js"></script>
 </body>

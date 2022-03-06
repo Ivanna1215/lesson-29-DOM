@@ -22,4 +22,69 @@ function editColor() {
     elem.style.backgroundColor =`rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`;
     // console.log (`Hello`);
 }
-console.log(`rgb(${Math.round(Math.random()*10)},${Math.round(Math.random()*10)},${Math.round(Math.random()*10)})`);
+
+function redColor() {
+    let red = document.getElementById('red');
+    let yellow = document.getElementById('yellow');
+    let green = document.getElementById('green');
+    red.style.backgroundColor = 'red';
+    yellow.style.backgroundColor='white';
+    green.style.backgroundColor= 'white';
+    
+}
+function yellowColor() {
+    let red = document.getElementById('red');
+    let yellow = document.getElementById('yellow');
+    let green = document.getElementById('green');
+    red.style.backgroundColor = 'white';
+    yellow.style.backgroundColor='yellow';
+    green.style.backgroundColor= 'white';
+    
+}
+
+function greenColor() {
+    let red = document.getElementById('red');
+    let yellow = document.getElementById('yellow');
+    let green = document.getElementById('green');
+    red.style.backgroundColor = 'white';
+    yellow.style.backgroundColor='white';
+    green.style.backgroundColor= 'green';
+    
+}
+
+
+    let red = document.getElementById('red');
+    let yellow = document.getElementById('yellow');
+    let green = document.getElementById('green');
+    let i = 1;
+    function color() {
+        if(i===1) {
+            red.style.backgroundColor = 'red';
+            yellow.style.backgroundColor='white';
+            green.style.backgroundColor= 'white';
+            console.log(i);
+        } else if (i===2){
+            red.style.backgroundColor = 'white';
+            yellow.style.backgroundColor='yellow';
+            green.style.backgroundColor= 'white';
+            console.log(i);
+        } else if (i===3) {
+            red.style.backgroundColor = 'white';
+            yellow.style.backgroundColor='white';
+            green.style.backgroundColor= 'green';
+            console.log(i);
+            i=0;
+        }
+        else {
+            red.style.backgroundColor = 'white';
+            yellow.style.backgroundColor='white';
+            green.style.backgroundColor= 'white';
+        }
+        i++;
+        
+}
+
+function easy() {
+let timeId = setInterval(() => color,2000);
+setTimeout(() =>{ clearInterval(timeId)}, 5000);
+}
